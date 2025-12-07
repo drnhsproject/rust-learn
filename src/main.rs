@@ -1,3 +1,4 @@
+mod race_condition;
 mod unit_test;
 
 use std::thread;
