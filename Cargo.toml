@@ -8,4 +8,5 @@ edition = "2024"
 [dependencies]
 hello = { path = "hello" }
 goodbye = { path = "goodbye" }
+tokio = { version = "1.48.0", features = ["full"] }
 
