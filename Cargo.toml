@@ -1,0 +1,11 @@
+workspace = {members = ["hello", "goodbye"]}
+
+[package]
+name = "rust-learn"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hello = { path = "hello" }
+goodbye = { path = "goodbye" }
+
