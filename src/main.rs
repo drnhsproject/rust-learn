@@ -1,5 +1,6 @@
 mod mutex_data;
 mod race_condition;
+mod thread_local_data;
 mod unit_test;
 
 use std::thread;
