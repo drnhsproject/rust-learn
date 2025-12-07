@@ -31,7 +31,7 @@ async fn run_concurrent(runtime: Arc<Runtime>) {
 mod tests {
     use super::*;
     use std::time::Instant;
-    use tokio::runtime::{Builder, Runtime};
+    use tokio::runtime::Builder;
 
     #[tokio::test]
     async fn test_async() {
@@ -44,11 +44,10 @@ mod tests {
 
     #[tokio::test]
     async fn test_database() {
-        let runtime = Arc::new(Runtime::new().unwrap());
         let mut handlers = vec![];
 
         for i in 0..5 {
-            let handler = runtime.spawn(get_database_data(i));
+            let handler = tokio::spawn(get_database_data(i));
             handlers.push(handler);
         }
 
