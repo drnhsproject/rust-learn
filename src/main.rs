@@ -1,7 +1,11 @@
+mod database_pool;
+mod domain;
 mod mutex_data;
 mod race_condition;
+mod repository;
 mod thread_local_data;
 mod try_barrier;
+mod try_connection;
 mod try_feature;
 mod try_once;
 mod try_using_date;
