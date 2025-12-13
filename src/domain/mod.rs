@@ -5,3 +5,7 @@ pub mod user_login_request;
 pub mod create_user_request;
 pub mod user;
 pub mod admin;
+pub mod login_request;
+pub mod create_category_request;
+pub mod register;
+pub mod database_context;

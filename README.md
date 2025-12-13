@@ -88,3 +88,9 @@ cargo add serde --features derive
 ```sh
 cargo add serde_json
 ```
+
+## Validation
+
+```sh
+cargo add validator --features derive
+```
