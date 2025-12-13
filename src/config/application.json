@@ -1,0 +1,12 @@
+{
+    "name": "Rust",
+    "version": "1.0.0",
+    "description": "A configuration file for a Rust application",
+    "database": {
+        "host": "localhost",
+        "port": 5432,
+        "username": "user",
+        "password": "password",
+        "db_name": "rust_app_db"
+    }
+}

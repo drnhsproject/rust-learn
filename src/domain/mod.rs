@@ -9,3 +9,4 @@ pub mod login_request;
 pub mod create_category_request;
 pub mod register;
 pub mod database_context;
+pub mod config;

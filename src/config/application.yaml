@@ -1,0 +1,7 @@
+name: Rust App
+database:
+  host: localhost
+  port: 5432
+  user: admin
+  password: secret
+  name: rust_db
