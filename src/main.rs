@@ -1,3 +1,4 @@
+mod connection;
 mod database_pool;
 mod domain;
 mod mutex_data;

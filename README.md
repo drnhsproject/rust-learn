@@ -58,3 +58,9 @@ sqlx migrate revert
 ```sh
 sqlx database drop
 ```
+
+## Redis
+
+```sh
+cargo add redis --features tokio-comp
+```
