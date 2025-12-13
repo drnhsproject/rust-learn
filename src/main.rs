@@ -11,6 +11,7 @@ mod try_feature;
 mod try_once;
 mod try_using_date;
 mod unit_test;
+mod config;
 
 use std::thread;
 

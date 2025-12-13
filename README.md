@@ -64,3 +64,15 @@ sqlx database drop
 ```sh
 cargo add redis --features tokio-comp
 ```
+
+## Log
+
+```sh
+cargo add env_logger
+```
+
+### complex log
+
+```sh
+cargo add log4rs
+```

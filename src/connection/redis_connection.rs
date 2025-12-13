@@ -1,4 +1,4 @@
-use redis::{AsyncCommands, Client, Commands, RedisError, aio::{MultiplexedConnection, PubSub}};
+use redis::{Client, Commands, RedisError, aio::{MultiplexedConnection, PubSub}};
 use std::env;
 
 pub fn get_redis_url() -> String {
@@ -43,7 +43,7 @@ async fn get_redis_connection() -> Result<MultiplexedConnection, RedisError> {
 async fn redis_subscribe_pubsub() -> Result<PubSub, RedisError> {
     let redis_url = get_redis_url();
     let client = Client::open(redis_url.as_str())?;
-    let mut pubsub = client.get_async_pubsub().await?;
+    let pubsub = client.get_async_pubsub().await?;
 
     Ok(pubsub)
 }

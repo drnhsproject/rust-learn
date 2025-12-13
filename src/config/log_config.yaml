@@ -1,0 +1,19 @@
+appenders:
+  stdout:
+    kind: console
+  app_file:
+    kind: file
+    path: logs/app.log
+    append: true
+
+root:
+  level: info
+  appenders:
+    - stdout
+    - app_file
+    
+loggers:
+  rust_learn::tests_log:
+    level: info
+  rust_learn::tests_log_2:
+    level: warn
