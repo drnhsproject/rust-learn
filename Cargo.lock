@@ -1632,6 +1632,8 @@ dependencies = [
  "log",
  "log4rs",
  "redis",
+ "serde",
+ "serde_json",
  "sqlx",
  "sqlx-cli",
  "tokio",

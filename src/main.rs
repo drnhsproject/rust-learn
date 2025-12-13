@@ -12,6 +12,7 @@ mod try_once;
 mod try_using_date;
 mod unit_test;
 mod config;
+mod try_serde;
 
 use std::thread;
 

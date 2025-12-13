@@ -76,3 +76,15 @@ cargo add env_logger
 ```sh
 cargo add log4rs
 ```
+
+## SERDE (Serialization/Deserialization)
+
+```sh
+cargo add serde --features derive
+```
+
+### Serde json
+
+```sh
+cargo add serde_json
+```
