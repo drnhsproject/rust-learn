@@ -13,6 +13,7 @@ mod try_using_date;
 mod unit_test;
 mod config;
 mod try_serde;
+mod try_handlebars;
 
 use std::thread;
 

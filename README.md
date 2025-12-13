@@ -100,3 +100,9 @@ cargo add validator --features derive
 ```sh
 cargo add config
 ```
+
+## Template
+
+```sh
+cargo add handlebars
+```
