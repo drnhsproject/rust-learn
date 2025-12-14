@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+            {{#if author}}
+                <p>By {{author}}</p>
+            {{else}}
+                <p>Guest</p>
+            {{/if}}
+        <div>
+            {{content}}
+        </div>
+        <div>
+            {{#unless footer}}
+                <p>Thank you for reading!</p>
+            {{/unless}}
+            {{#if footer}}
+                <p>{{footer}}</p>
+            {{/if}}
+        </div>
+    </body>
+</html>

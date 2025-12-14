@@ -10,3 +10,5 @@ pub mod create_category_request;
 pub mod register;
 pub mod database_context;
 pub mod config;
+pub mod person;
+pub mod blog;

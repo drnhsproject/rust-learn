@@ -1,0 +1,34 @@
+<div>
+    <p>First Name: {{first_name}}</p>
+    <p>Last Name: {{last_name}}</p>
+
+    {{#if hobbies}}
+        <ul>
+            {{#each hobbies}}
+                <li>
+                   {{@index}} - {{this}}
+                </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+
+    {{#if addresses}}
+        <ul>
+            {{#each addresses}}
+                <li>
+                    {{this.street}} - {{this.city}}
+                </li>
+            {{/each}}
+        </ul>
+
+        {{#each addresses}}
+            <ul>
+                {{#each this}}
+                    <li>
+                        {{@key}} - {{this}}
+                    </li>
+                {{/each}}
+            </ul>
+        {{/each}}
+    {{/if}}
+</div>
